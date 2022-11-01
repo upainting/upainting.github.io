@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>UNIMO project page</title>
+<meta id="viewport" name="viewport" content="width=500" />
+<meta name="description" content="UNIMO is a unified-modal learning framework" />
+
+
+<link rel="stylesheet" href="./theme/css/normalize.css" type="text/css" /> 
+<link rel="stylesheet" href="./theme/css/base.css" type="text/css" /> 
+<link rel="stylesheet" href="./theme/css/code.css" type="text/css" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110992267-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110992267-1');
+</script>
+
+<!-- 
+<link rel="icon" type="image/png" href="./theme/images/avatar.png" sizes="200x200">
+<link rel="icon" type="image/png" href="./theme/images/favicon.png" sizes="32x32"> -->
+</head>
+
+<body>
+
+<div class="content">
+
+    <header>
+        <img src="./theme/images/unimo-logo.png" alt="me">
+        <h1>UNIMO: unified-modal learning from different modalities of data, by <a href='https://nlp.baidu.com/homepage/index'>Baidu NLP</a></h1>
+        <ul>
+            <!--<li><a href="./#pubs">Publications</a></li>
+            <li><a href="./#projects">Projects</a></li>
+            <li><a href="./#backgroud">Backgroud</a></li>
+            <li><a href="./resume.pdf">CV</a></li>
+            <li><a href="mailto:cs-ly@pku.edu.cn"</a>Contact</li> -->
+        </ul>
+    </header>
+
+
+<section id="news">
+    <h3>News:</h3>
+    <ul>
+    <li>[2022.02.24] <mark>UNIMO-2</mark> accepted by Findings of ACL 2022, long paper.</li>
+    <li>[2021.05.06] <mark>UNIMO</mark> accepted by Main Conference of ACL 2021, long paper.</li>
+</ul>
+</section>
+
+
+
+<section id="unimo-2">
+    <h2><a href="https://arxiv.org/abs/2203.09067">UNIMO-2: End-to-End Unified Vision-Language Grounded Learning</a></h2>
+    <img src="./theme/images/UNIMO-2.png" alt="UNIMO-2">
+    <br> Vision-Language Pre-training (VLP) has achieved impressive performance on various cross-modal downstream tasks. However, most existing methods can only learn from aligned image-caption data and rely heavily on expensive regional features, which greatly limits their scalability and performance. In this paper, we propose an end-to-end unified modal pre-training framework, namely UNIMO-2, for joint learning on both aligned image-caption data and unaligned image-only and text-only corpus. We build a unified Transformer model to jointly learn visual representations, textual representations and semantic alignment between images and texts. In particular, we propose to conduct grounded learning on both images and texts via a sharing grounded space, which helps bridge unaligned images and texts, and align the visual and textual semantic spaces on different types of corpora. The experiments show that our grounded learning method can improve textual and visual semantic alignment for improving performance on various cross-modal tasks. Moreover, benefiting from effective joint modeling of different types of corpora, our model also achieves impressive performance on single-modal visual and textual tasks.
+    <br> The code and pre-trained models have been released at: [<a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/UNIMO-2">UNIMO-2</a>]
+
+</section>
+
+
+
+<section id="unimo-1">
+    <h2><a href="https://arxiv.org/pdf/2012.15409.pdf">UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning</a></h2>
+    <img src="./theme/images/UNIMO-1.png" alt="UNIMO-1">
+    <br> Existed pre-training methods either focus on single-modal tasks or multi-modal tasks, and cannot effectively adapt to each other. They can only utilize single-modal data (i.e., text or image) or limited multi-modal data (i.e., image-text pairs). In this work, we propose a UNIfied-MOdal pre-training architecture, namely UNIMO, which can effectively adapt to both single-modal and multi-modal understanding and generation tasks. Large scale of free text corpus and image collections are utilized to improve the capability of visual and textual understanding, and crossmodal contrastive learning (CMCL) is leveraged to align the textual and visual information into a unified semantic space, over a corpus of image-text pairs augmented with related images and texts. With the help of rich non-paired single-modal data, our model is able to learn more generalizable representations, by allowing textual knowledge and visual knowledge to enhance each other in the unified semantic space. The experimental results show that UNIMO greatly improves the performance of several singlemodal and multi-modal downstream tasks.
+    <br> Our code and pre-trained models have been released at: [<a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/UNIMO">UNIMO</a>]
+
+</section>
+
+
+<section id="pub">
+    <h2>Publications:</h2>
+    <ul>
+        <li> <b>[ACL 2022]</b> <a href="https://weili-nlp.github.io/">Wei Li</a>, Can Gao, Guochenng Niu, Xinyan Xiao, Hao Liu, Jiachen Liu, Hua Wu and Haifeng Wang. <i>UNIMO-2: End-to-End Unified Vision-Language Grounded Learning</i>. Findings of ACL 2022, long paper [<a href="https://arxiv.org/abs/2203.09067">PDF</a>] [<a href="">code</a>]
+        </li>
+
+        <li> <b>[ACL 2021]</b> <a href="https://weili-nlp.github.io/">Wei Li*</a>, Can Gao*, Guochenng Niu*, Xinyan Xiao*, Hao Liu, Jiachen Liu, Hua Wu and Haifeng Wang. <i>UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning</i>. ACL 2021 long paper, Main Conference. (* indicates equal contribution) [<a href="https://arxiv.org/pdf/2012.15409.pdf">PDF</a>] [<a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/UNIMO">code</a>]
+        </li>
+</ul>
+</section>
+
+
+<!-- Gitalk start -->
+<!--div id="gitalk-container"></div> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+<script>
+    var gitalk  = new Gitalk ({
+        id: window.location.pathname,   // Ensure uniqueness and length less than 50
+        clientID: 'b25743839c640da9d49b',
+        clientSecret: '396235c467909092be147449fab79c1f5a5f1b84',
+        repo: 'unimo-ptm.github.io',
+        owner: 'UNIMO-PTM',
+        admin: ['UNIMO-PTM'],
+        language: 'en',
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script--> 
+<!-- Gitalk end -->
+
+
+
+<br><br>
+<hr>
+<!--footer-->
+<!-- Start of StatCounter Code for Default Guide -->
+<!--div align="center">
+    <b><small>&copy; Copyright 2022, Wei Li
+    <script type="text/javascript">
+        var m = "This page was last updated: " + document.lastModified;
+        var p = m.length-8;
+        document.writeln("<center>");
+        document.write(m.substring(p, 0));
+        document.writeln("</center>");
+    </script>
+    </small>
+    </b>
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wO1qKLVBepdONA68DEputbX0o8TwTJ3ZnO_JoJls0rg&cl=ffffff&w=a"></script-->
+
+    <!-- Default Statcounter code for My Homepage https://weili-nlp.github.io -->
+    <!-- script type="text/javascript">
+    var sc_project=12695154; 
+    var sc_invisible=0; 
+    var sc_security="d7caf4a3"; 
+    var scJsHost = "https://";
+    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="https://statcounter.com/" target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/12695154/0/d7caf4a3/0/" alt="site stats"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript-->
+    <!-- End of Statcounter Code -->
+<!--/div-->
+<!--/footer-->
+
+</body>
+</html>
